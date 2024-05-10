@@ -33,7 +33,7 @@ class _AllMenusState extends State<AllMenus> {
 
   PreferredSizeWidget _buildAppBar(BuildContext context) {
     return AppBar(
-      systemOverlayStyle: SystemUiOverlayStyle(
+      systemOverlayStyle: const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent, // <-- SEE HERE
         statusBarIconBrightness:
             Brightness.dark, //<-- For Android SEE HERE (dark icons)

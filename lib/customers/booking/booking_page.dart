@@ -154,69 +154,6 @@ class _BookingPageState extends State<BookingPage> {
           const SizedBox(
             height: 5,
           ),
-          // SearchableDropdown.future(
-          //   hintText: const Text(
-          //     "Lokasi Bengkelly",
-          //     style: TextStyle(fontSize: 16, fontFamily: 'Nunito'),
-          //   ),
-          //   trailingIcon: Icon(
-          //     Icons.location_on,
-          //     size: 20,
-          //     color: MyColors.greySeeAll,
-          //   ),
-          //   hasTrailingClearIcon: false,
-          //   dialogOffset: 2,
-          //   backgroundDecoration: (child) {
-          //     return InputDecorator(
-          //       decoration: InputDecoration(
-          //         isDense: true,
-          //         border: OutlineInputBorder(
-          //           borderRadius: BorderRadius.circular(8),
-          //           borderSide: BorderSide(
-          //             color: theme.colorScheme.primaryContainer,
-          //             width: 1,
-          //           ),
-          //         ),
-          //         enabledBorder: OutlineInputBorder(
-          //           borderRadius: BorderRadius.circular(8),
-          //           borderSide: BorderSide(
-          //             color: theme.colorScheme.primaryContainer,
-          //             width: 1,
-          //           ),
-          //         ),
-          //         focusedBorder: OutlineInputBorder(
-          //           borderRadius: BorderRadius.circular(8),
-          //           borderSide: BorderSide(
-          //             color: theme.colorScheme.primaryContainer,
-          //             width: 1,
-          //           ),
-          //         ),
-          //       ),
-          //       child: child,
-          //     );
-          //   },
-          //   controller: locationController,
-          //   futureRequest: () async {
-          //     final paginatedList = await api.getLokasi();
-          //     return paginatedList.data
-          //         ?.map(
-          //           (e) => SearchableDropdownMenuItem(
-          //             value: Lokasi(id: e.id, nama: e.nama, alamat: e.alamat),
-          //             label: e.alamat ?? '',
-          //             child: Text(e.nama ?? ''),
-          //           ),
-          //         )
-          //         .toList();
-          //   },
-          //   onChanged: (value) {
-          //     setState(() {
-          //       if (value is Lokasi) {
-          //         locationController.searchText = value.nama ?? '';
-          //         idLocation = value.id;
-          //       }
-          //     });
-          //   },
-          // ),
           CustomTextFormField(
             controller: locationMapsController,
             hintText: "Lokasi Bengkelly",

@@ -51,7 +51,13 @@ class _HomePageState extends State<HomePage> {
     ),
     const SliderImageWidget(
       image: SLIDERS,
-    )
+    ),
+    const SliderImageWidget(
+      image: SLIDERS3,
+    ),
+    const SliderImageWidget(
+      image: SLIDERS4,
+    ),
   ];
 
   final NewsBloc newsBloc = NewsBloc();
@@ -97,11 +103,8 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _checkForUpdate() async {
     try {
-      // Mengecek ketersediaan pembaruan
       AppUpdateInfo updateInfo = await InAppUpdate.checkForUpdate();
-
       if (updateInfo.updateAvailability == UpdateAvailability.updateAvailable) {
-        // Menampilkan dialog konfirmasi pembaruan
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -476,14 +479,12 @@ class UpdateDialog extends StatelessWidget {
       actions: <Widget>[
         TextButton(
           onPressed: () {
-            // Menutup dialog
             Navigator.of(context).pop();
           },
           child: Text('Nanti'),
         ),
         TextButton(
           onPressed: () async {
-            // Memulai pembaruan fleksibel
             Navigator.of(context).pop();
             await InAppUpdate.startFlexibleUpdate();
           },

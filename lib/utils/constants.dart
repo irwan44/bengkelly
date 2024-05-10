@@ -3,7 +3,6 @@ const String GOOGLE_API_KEY = 'AIzaSyDR62lMu_ZOGtuvlxTJWl8jm2ciDc2Smmo';
 
 // ------- Config Endpoint ---------
 const String BASE_URL = "https://mobile.techthinkhub.id/api";
-// const String BASE_URL = "https://be.techthinkhub.id/api";
 const String BASE_URL_RSS = "https://bengkelly.co.id";
 const String BASE_URL_FLEET = "https://fleetmaintenance.co.id";
 const String LOGIN_ENDPOINT = "$BASE_URL/customer/login";
@@ -54,7 +53,9 @@ const String IC_LOCATION = "assets/ic_location.png";
 const String IC_CHAT = "assets/ic_chat.png";
 const String BANNER = "assets/banner.png";
 const String SLIDERS = "assets/slider1.png";
-const String SLIDERS2 = "assets/slide2.jpg";
+const String SLIDERS2 = "assets/slide-2.jpg";
+const String SLIDERS3 = "assets/slide-3.jpg";
+const String SLIDERS4 = "assets/slide-4.jpg";
 const String IC_FLOATING = "assets/floating.png";
 const String BOOKING_SERVICE = "assets/booking_service.png";
 const String ALL = "assets/lihat_semua.png";
@@ -92,9 +93,9 @@ const String LOCATION_MARK = "assets/Location_mark.png";
 const String IC_NEARBY = 'assets/ic_nearby.png';
 const String DROP_PIN = 'assets/drop_pin_bengkelly.png';
 const String DUMMY_IMAGE_NEW = 'assets/dummy_image.png';
-const String REST_AREA_575 = 'assets/rest_area_575.png';
-const String REST_AREA_379 = 'assets/rest_area_379.png';
-const String REST_AREA_389 = 'assets/rest_area_389.jpg';
+const String REST_AREA_575 = 'assets/228a.jpg';
+const String REST_AREA_379 = 'assets/379a.jpg';
+const String REST_AREA_389 = 'assets/389b.jpg';
 const String REST_AREA_228a = 'assets/288a/s228a-1.jpg';
 const String REST_AREA_228a_2 = 'assets/288a/s228a-2.jpg';
 const String REST_AREA_228a_3 = 'assets/288a/s228a-3.jpg';
@@ -102,8 +103,6 @@ const String REST_AREA_319b_ = 'assets/319b/s319b-1.jpg';
 const String REST_AREA_319b_2_ = 'assets/319b/s319b-2.jpg';
 const String REST_AREA_319b_3_ = 'assets/319b/s319b-3.jpg';
 const String REST_AREA_319 = 'assets/319b.jpg';
-const String OLI4L = 'assets/oli4l.png';
-const String OLI1L = 'assets/oli1l.jpeg';
 
 // ------- Icons Assets ---------
 const String STAR = 'assets/star.png';

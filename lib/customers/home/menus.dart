@@ -5,6 +5,8 @@ import 'package:bengkelly_apps/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 
+import '../booking/component/bottom_sheet_location.dart';
+import '../booking/component/bottom_sheet_location_test.dart';
 import '../xroot/tabPageCustomer.dart';
 
 class UserMenus {
@@ -42,6 +44,16 @@ class UserMenus {
         ),
       ),
     );
+  }
+  _goRepairAndMaintenanfce(context) async {
+    debugPrint('_goRepairAndMaintenance');
+      await Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => BottomSheetLocationtest(onSelected: (String locationRestArea, int? idLocations) {  },),
+        ),
+      );
+      //
   }
 
   _goAllMenus(context) {
@@ -128,6 +140,17 @@ class UserMenus {
         color: Colors.blue,
         title: "Repair & Maintenance",
         onTap: () => _goRepairAndMaintenance(context),
+      ),
+    );
+
+    masterDataList.add(
+      MasterData(
+        id: uuid.v4(),
+        icon: Icons.note,
+        image: DROP_PIN,
+        color: Colors.blue,
+        title: "Lokasi Bengkelly",
+        onTap: () => _goRepairAndMaintenanfce(context),
       ),
     );
 
